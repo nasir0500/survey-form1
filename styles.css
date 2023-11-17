@@ -1,0 +1,128 @@
+/*file: styles.css*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            line-height: 25px;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+        }
+
+        body{
+            background: url("https://images.pexels.com/photos/713644/pexels-photo-713644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .container{
+            margin: 40px 0;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title, .description{
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .title{
+            font-size: 45px;
+        }
+
+        .form{
+            width: 60%;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label,p{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],input[type = "email"], input[type = "number"], select{
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 5px 10px;
+            border: 1px solid #c0b4b4;
+            border-radius: 5px;
+            color: #495057;
+        }
+
+        input[type="radio"]{
+            width: 17px;
+            height: 17px;
+        }
+
+        .recommand{
+            margin-bottom: 20px;
+        }
+
+        .recommand label{
+            font-weight: normal;
+            display: inline-block;
+            margin: 0 15px 0 5px;
+        }
+        
+        .favorite input{
+            margin-right: 5px;
+            width: 17px;
+            height: 17px;
+        }
+
+        .favorite label{
+            display: flex;
+            font-weight: normal;
+            align-items: center;
+        }
+
+        textarea{
+            width: 100%;
+            padding: 5px 10px;
+            border: 1px solid #c0b4b4;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]{
+            color: #495057;
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+            padding: 12px;
+            font-size: 25px;
+            font-weight: bold;
+            border: 1px solid #80D0C7;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 3px -3px 3px #495057;
+            background-image: linear-gradient(to left, #f7ce68, #85ffbd, #fffb7d);
+            background-position: left;
+            background-size: 140%;
+            transition:.3s;
+        }
+
+        input[type="submit"]:hover{
+            color: black;
+            background-position: right;
+        }
+
+        .optional{
+            font-weight: normal;
+            margin-left: 5px;
+            font-size: 12px;
+            color:#495057;
+        }
+
+        @media only screen and (max-width:430px){
+            .form{
+                width: 95%;
+            }
+        }
